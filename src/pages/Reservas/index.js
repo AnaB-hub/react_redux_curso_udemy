@@ -6,6 +6,7 @@ import {
 } from "../../store/modules/reserve/actions";
 import { MdDelete, MdAddCircle, MdRemoveCircle } from "react-icons/md";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export default function Reservas() {
   const dispatch = useDispatch();
@@ -36,7 +37,9 @@ export default function Reservas() {
             <button type="button" onClick={() => decrementAmount(reserve)}>
               <MdRemoveCircle size={25} color="#191919" />
             </button>
-            <input type="text" readOnly value={reserve.amount} />
+            <label className="amountLabel" type="text" readOnly>
+              {reserve.amount}
+            </label>
             <button type="button" onClick={() => incrementAmount(reserve)}>
               <MdAddCircle size={25} color="#191919" />
             </button>
@@ -47,10 +50,13 @@ export default function Reservas() {
           </button>
         </div>
       ))}
-
-      <footer>
-        <button type="button">Solicitar Reservas</button>
-      </footer>
+      <Link className="link" to="/">
+        <footer>
+          <button type="button" title="Voltar para home">
+            Solicitar Reservas
+          </button>
+        </footer>
+      </Link>
     </div>
   );
 }

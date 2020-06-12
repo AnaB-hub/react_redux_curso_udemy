@@ -10,13 +10,15 @@ export default function Header() {
   return (
     <header className="container">
       <Link to="/">
-        <img className="logo" src={logo} alt="Logo Projeto" />
+        <img className="logo" src={logo} title="home" alt="Logo Projeto" />
       </Link>
 
       <Link className="reserva" to="/reservas">
         <div>
           <strong>Minhas reservas</strong>
-          <span>{reserveSize} reservas</span>
+          <span title="Clique para ver suas reservas">
+            {reserveSize} reservas
+          </span>
         </div>
       </Link>
     </header>

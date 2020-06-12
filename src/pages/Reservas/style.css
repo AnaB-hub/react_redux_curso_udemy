@@ -43,3 +43,12 @@ footer button {
   padding: 5px;
   width: 45px;
 }
+
+.link {
+  text-decoration: none;
+}
+
+.amountLabel {
+  padding-left: 6px;
+  padding-right: 6px;
+}
