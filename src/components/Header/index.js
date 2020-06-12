@@ -6,7 +6,6 @@ import "./style.css";
 
 export default function Header() {
   const reserveSize = useSelector((state) => state.reserve.length);
-  debugger;
 
   return (
     <header className="container">
