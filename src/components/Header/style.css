@@ -1,4 +1,4 @@
-.container {
+.container{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,28 +6,28 @@
   padding: 10px 10px;
 }
 
-.logo {
+.logo{
   max-width: 110px;
   max-height: 110px;
 }
 
-.reserva {
+.reserva{
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-.reserva div {
+.reserva div{
   text-align: right;
   margin-right: 10px;
 }
 
-.reserva strong {
-  color: #fff;
+.reserva strong{
+  color: #FFF;
   display: block;
 }
 
-.reserva span {
-  color: #ddd;
-  font-size: 15px;
+.reserva span{
+  color: #DDD;
+  font-size: 15px
 }
